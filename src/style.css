@@ -57,14 +57,15 @@ body, html {
   position: relative;
   width: 100%;
   height: 100%;
-  /* Dark Chassis Styling */
-  background: linear-gradient(145deg, #1e1e1e, #0d0d0d);
+  /* Dark Chassis Styling - Seamless Integration */
+  background: linear-gradient(145deg, #0a0a0a, #000000); /* Nearly black */
   border-radius: 20px;
-  /* Bezel depth effect */
+  /* Phantom Bezel - Defined by light, not color */
   box-shadow: 
-    inset 2px 2px 5px rgba(255, 255, 255, 0.05),
-    inset -5px -5px 10px rgba(0, 0, 0, 0.8),
-    0 0 20px rgba(51, 255, 51, 0.05); /* Subtle phosphor ambient glow */
+    inset 1px 1px 2px rgba(255, 255, 255, 0.1), /* Subtle top-left highlight */
+    inset -1px -1px 2px rgba(255, 255, 255, 0.05), /* Subtle bottom-right */
+    0 0 15px rgba(0, 0, 0, 0.8), /* Drop shadow to separate from void */
+    0 0 30px rgba(51, 255, 51, 0.02); /* Very faint ambient bleed */
   
   /* Centering the screen */
   display: flex;
@@ -74,13 +75,12 @@ body, html {
   container-type: size;
 }
 
-/* Remove the "active" image swap */
+/* Maintain dark seamless look when active, just enhance the glow */
 body.crt-active #monitor-bezel {
-  background: linear-gradient(145deg, #1e1e1e, #0d0d0d);
+  background: #050505;
   box-shadow: 
-    inset 2px 2px 5px rgba(255, 255, 255, 0.05),
-    inset -5px -5px 10px rgba(0, 0, 0, 0.8),
-    0 0 40px rgba(51, 255, 51, 0.15); /* Stronger ambient glow when on */
+    inset 1px 1px 2px rgba(255, 255, 255, 0.1),
+    0 0 50px rgba(51, 255, 51, 0.1); /* Ambient glow from screen */
 }
 
 /* ============================================

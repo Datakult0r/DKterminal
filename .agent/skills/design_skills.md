@@ -11,7 +11,8 @@ You are a specialist in creating immersive, retro-futuristic web interfaces that
 
 1.  **Aesthetics**:
 
-    - **Color Palette**: High-contrast monochrome (Green/Amber/Blue on Black).
+    - **Color Palette**: High-contrast monochrome (Green/Amber/Blue on Black). Deep blacks for chassis.
+    - **Seamless Integration**: The terminal hardware should blend into the webpage background (#000). Avoid distinctive "grey boxes" or heavy bezels. Use shadow and light to define shape, not color differences.
     - **Typography**: Monospaced fonts (Courier New, VT323, Fira Code).
     - **Visual Artifacts**: Scanlines, screen curvature (vignette), chromatic aberration, text glow/bloom, and subtle screen flicker.
     - **Layout**: Strict grid alignment, but **responsive** to modern screen sizes. The terminal should scale or reflow gracefully on mobile devices.
