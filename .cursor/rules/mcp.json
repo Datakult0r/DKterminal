@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "web-eval-agent": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/Operative-Sh/web-eval-agent.git",
+        "webEvalAgent"
+      ],
+      "env": {
+        "OPERATIVE_API_KEY": "vop-OCB8DTe3SUPaJUB9rLTH1yhiSG0Ng76jtFBJGUPXiYA"
+      }
+    }
+  }
+} 

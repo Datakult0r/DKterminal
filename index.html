@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Philippe Kung - MS-DOS Terminal</title>
+    <meta
+      name="description"
+      content="Interactive MS-DOS terminal portfolio of Philippe Kung, AI and Data expert."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isfFJU.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <div id="app-root">
+      <div class="monitor-wrapper">
+        <div id="monitor-bezel">
+          <!-- The Screen Area is positioned relative to the Bezel -->
+          <div class="screen-area">
+            <div id="startup-hint" class="startup-hint">
+              <span>Click POWER to start</span>
+            </div>
+            <div id="terminal-container" class="hidden">
+              <button id="escapeButton" class="escape-button hidden">ESC</button>
+              <pre id="terminal-output"></pre>
+              <span id="cursor" class="hidden">█</span>
+            </div>
+            <!-- CRT Overlay Effects -->
+            <div class="scanlines"></div>
+            <div class="glow-overlay"></div>
+          </div>
+
+          <!-- Physical Controls on the Monitor -->
+          <div class="controls-area">
+            <button id="changePageButton" aria-label="Power Button" class="power-switch"></button>
+            <div class="power-led"></div>
+          </div>
+        </div>
+      </div>
+
+      <audio id="humSound" src="/sounds/computer-fan-ambient.mp3" loop preload="auto"></audio>
+      <audio id="keySound" src="/sounds/keyboard-typing.mp3" preload="auto"></audio>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

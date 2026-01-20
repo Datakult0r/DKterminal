@@ -1,0 +1,15 @@
+{
+  "web-eval-agent": {
+    "command": "uvx",
+    "args": [
+      "webEvalAgent",
+      "--url",
+      "http://localhost:5174",
+      "--task",
+      "Test the MS-DOS terminal interface"
+    ],
+    "env": {
+      "OPERATIVE_API_KEY": "vop-OCB8DTe3SUPaJUB9rLTH1yhiSG0Ng76jtFBJGUPXiYA"
+    }
+  }
+} 

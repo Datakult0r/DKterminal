@@ -1,0 +1,82 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  background: url('/images/bg_off.png') center center / contain no-repeat;
+  transition: none !important; /* Ensure no transitions */
+  opacity: 1 !important; /* Force full opacity */
+  animation: none !important; /* Disable any animations */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#changePageButton {
+  position: absolute;
+  /* Values from scrape, adjusted slightly for potentially different viewport baseline */
+  top: calc(432px - 10px); /* Approximation based on scrape */
+  left: calc(918.363px - 10px); /* Approximation based on scrape */
+  width: 42.0233px;
+  height: 42.0233px;
+  background-color: rgba(217, 30, 19, 0.5); /* Semi-transparent red */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0; /* Remove default padding */
+  outline: none; /* Remove default outline */
+}
+
+#changePageButton:hover {
+  background-color: rgba(217, 30, 19, 0.7);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#terminal-container {
+  position: absolute;
+  /* Fine-tuned to sit perfectly at the top-left of the green screen */
+  top: 5.5%;
+  left: 19.3%;
+  width: 61.4%;
+  height: 78%; /* full vertical real-estate inside the bezel */
+  background-color: transparent;
+  overflow: hidden;
+  padding: 0 0 0 22px; /* minimal left padding, no top padding */
+  border: none;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#terminal-output {
+  font-family: 'VT323', monospace;
+  color: #00FF00;
+  font-size: 22px; /* Slightly larger */
+  font-weight: bold;
+  line-height: 1.4; /* Increased line spacing */
+  letter-spacing: 1px; /* wider glyph spacing */
+  white-space: pre-wrap; /* Allow wrapping but preserve spaces */
+  margin: 0;
+  text-align: left; /* Ensure left alignment */
+}
+
+#cursor {
+  font-family: 'VT323', monospace;
+  color: #00FF00;
+  font-size: 22px; /* Match updated terminal-output font-size */
+  font-weight: bold;
+  animation: blink 1s step-start infinite;
+  display: inline; /* Keep it on the same line as text */
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

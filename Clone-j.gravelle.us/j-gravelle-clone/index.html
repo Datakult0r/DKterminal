@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Home Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div id="background">
+    <button id="changePageButton"></button>
+    <div id="terminal-container" class="hidden">
+      <pre id="terminal-output"></pre>
+      <span id="cursor" class="hidden">_</span>
+    </div>
+    <audio id="humSound" src="https://cdn.pixabay.com/download/audio/2022/03/01/audio_0d09965e383b.mp3?filename=computer-fan-ambient-19670.mp3" loop></audio>
+    <audio id="keySound" src="https://cdn.pixabay.com/download/audio/2021/11/10/audio_4dee0da451.mp3?filename=keyboard-typing-138251.mp3"></audio>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

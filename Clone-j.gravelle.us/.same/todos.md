@@ -1,0 +1,32 @@
+- [x] Initialize Project (done)
+- [x] Download Assets
+  - [x] Download bg_off.png
+  - [x] Download bg_on.png
+- [x] Create HTML Structure
+- [x] Add CSS Styling (updated for image backgrounds)
+- [x] Implement TypeScript Logic (toggle image backgrounds)
+- [x] Start development server
+- [x] Create initial version
+- [ ] Revert to original image backgrounds
+  - [x] Re-download bg_off.png and bg_on.png
+  - [x] Update CSS to use image background
+  - [x] Update TS to toggle image background
+- [ ] Create new version for reverted image backgrounds
+- [ ] Add typing animation and keyboard (1-5, Esc) interactions
+  - [x] Define text content for animation (based on original site - awaiting user details)
+  - [x] Define behavior for key presses (1-5, Esc) (based on original site - awaiting user details)
+  - [x] Implement HTML/CSS for text display on screen
+    - [x] Select and link VT323 Google Font
+    - [x] Add terminal div structure to HTML
+    - [x] Style terminal container, output, and cursor (initial positioning)
+  - [x] Implement TS for typing animation
+    - [x] Core character-by-character typing utility
+    - [x] Special sequence for DIR screen (Startup, prompt, list)
+    - [x] General function for displaying other screens (ABOUT, SKILLS, etc.)
+  - [x] Implement TS for keyboard listeners
+    - [x] Handle 1-4 for navigation from DIR
+    - [x] Handle 5 as invalid option on DIR
+    - [x] Handle Escape from DIR (turn off screen)
+    - [x] Handle Escape from sub-screens (return to DIR)
+  - [x] Integrate with existing button functionality (if needed)
+  - [x] Create new version
