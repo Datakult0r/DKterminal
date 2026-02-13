@@ -33,8 +33,8 @@ function playKeyClick(): void {
     noiseFilter.frequency.value = 800; // Muffled impact
 
     const noiseGain = audioCtx.createGain();
-    noiseGain.gain.setValueAtTime(0.4, t);
-    noiseGain.gain.exponentialRampToValueAtTime(0.01, t + 0.04);
+    noiseGain.gain.setValueAtTime(0.08, t);
+    noiseGain.gain.exponentialRampToValueAtTime(0.001, t + 0.04);
 
     noise.connect(noiseFilter);
     noiseFilter.connect(noiseGain);
